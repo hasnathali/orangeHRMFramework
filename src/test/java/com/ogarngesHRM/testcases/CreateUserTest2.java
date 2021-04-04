@@ -43,7 +43,7 @@ public class CreateUserTest2 extends BaseClass {
 		admin.userPassword(password);
 		admin.userConPassword(ConPassword);
 		admin.click();
-		admin.userverify(userName);
+		//admin.userverify(userName);
 		admin.urlVerify();
 		
 	}

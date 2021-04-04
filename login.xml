@@ -7,7 +7,7 @@
 
   <test thread-count="5" name="loginTest">
     <classes>
-      <class name="com.ogarngesHRM.testcases.LoginTest2"/>
+      <class name="com.ogarngesHRM.testcases.LoginTest"/>
     </classes>
   </test> <!-- loginTest -->
 </suite> <!-- Suite -->

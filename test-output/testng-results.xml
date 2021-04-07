@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-31T23:14:45 EDT" name="Suite" finished-at="2021-03-31T23:15:15 EDT" duration-ms="30716">
+  <suite started-at="2021-04-06T23:46:29 EDT" name="Suite" finished-at="2021-04-06T23:46:38 EDT" duration-ms="8355">
     <groups>
     </groups>
-    <test started-at="2021-03-31T23:14:45 EDT" name="Test" finished-at="2021-03-31T23:15:15 EDT" duration-ms="30716">
-      <class name="com.ogarngesHRM.testcases.CreateUserTest2">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.ogarngesHRM.testcases.CreateUserTest2@6950ed69]" started-at="2021-03-31T23:14:45 EDT" name="startBrowser" finished-at="2021-03-31T23:14:55 EDT" duration-ms="10412" status="PASS">
+    <test started-at="2021-04-06T23:46:29 EDT" name="loginTest" finished-at="2021-04-06T23:46:38 EDT" duration-ms="8355">
+      <class name="com.ogarngesHRM.testcases.LoginTest">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.ogarngesHRM.testcases.LoginTest@7c3fdb62]" started-at="2021-04-06T23:46:29 EDT" name="startBrowser" finished-at="2021-04-06T23:46:34 EDT" duration-ms="5069" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="login_001(java.lang.String, java.lang.String)[pri:1, instance:com.ogarngesHRM.testcases.CreateUserTest2@6950ed69]" started-at="2021-03-31T23:14:57 EDT" name="login_001" data-provider="TestData" finished-at="2021-03-31T23:15:01 EDT" duration-ms="3190" status="PASS">
+        <test-method signature="login_001(java.lang.String, java.lang.String)[pri:0, instance:com.ogarngesHRM.testcases.LoginTest@7c3fdb62]" started-at="2021-04-06T23:46:35 EDT" name="login_001" data-provider="TestData" finished-at="2021-04-06T23:46:37 EDT" duration-ms="2150" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,139 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_001 -->
-        <test-method signature="createUser_001(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.ogarngesHRM.testcases.CreateUserTest2@6950ed69]" started-at="2021-03-31T23:15:01 EDT" name="createUser_001" data-provider="NewUserTestData" finished-at="2021-03-31T23:15:03 EDT" duration-ms="2613" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John Smith]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Mamun_61]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Mamun_50]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Mamun_50]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser_001 -->
-        <test-method signature="createUser_001(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.ogarngesHRM.testcases.CreateUserTest2@6950ed69]" started-at="2021-03-31T23:15:03 EDT" name="createUser_001" data-provider="NewUserTestData" finished-at="2021-03-31T23:15:06 EDT" duration-ms="2208" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ESS]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John Smith]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Wakil_61]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Wakil_50]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Wakil_50]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser_001 -->
-        <test-method signature="createUser_001(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.ogarngesHRM.testcases.CreateUserTest2@6950ed69]" started-at="2021-03-31T23:15:06 EDT" name="createUser_001" data-provider="NewUserTestData" finished-at="2021-03-31T23:15:12 EDT" duration-ms="6268" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Lisa Andrews]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Hasnath_61]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Hasnath_52]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Hasnath_52]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser_001 -->
-        <test-method signature="createUser_001(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.ogarngesHRM.testcases.CreateUserTest2@6950ed69]" started-at="2021-03-31T23:15:12 EDT" name="createUser_001" data-provider="NewUserTestData" finished-at="2021-03-31T23:15:14 EDT" duration-ms="2602" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ESS]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Lisa Andrews]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Mizan_61]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Mizan_50]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Mizan_50]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser_001 -->
-        <test-method signature="logout_002()[pri:3, instance:com.ogarngesHRM.testcases.CreateUserTest2@6950ed69]" started-at="2021-03-31T23:15:14 EDT" name="logout_002" finished-at="2021-03-31T23:15:15 EDT" duration-ms="647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout_002 -->
-        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.ogarngesHRM.testcases.CreateUserTest2@6950ed69]" started-at="2021-03-31T23:15:15 EDT" name="closeBroswer" finished-at="2021-03-31T23:15:15 EDT" duration-ms="329" status="PASS">
+        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.ogarngesHRM.testcases.LoginTest@7c3fdb62]" started-at="2021-04-06T23:46:37 EDT" name="closeBroswer" finished-at="2021-04-06T23:46:38 EDT" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBroswer -->
-      </class> <!-- com.ogarngesHRM.testcases.CreateUserTest2 -->
-    </test> <!-- Test -->
+      </class> <!-- com.ogarngesHRM.testcases.LoginTest -->
+    </test> <!-- loginTest -->
   </suite> <!-- Suite -->
 </testng-results>

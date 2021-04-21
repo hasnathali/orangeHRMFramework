@@ -39,7 +39,7 @@ public class ExtentManager {
 	    public static String getDateTime()
 	    {	//Date import from java.util
 	    	Date currentdate = new Date();
-	    	SimpleDateFormat myformat =new SimpleDateFormat("DD_mm_yy_HH_mm_ss");
+	    	SimpleDateFormat myformat =new SimpleDateFormat("MM_dd_yy_HH_mm_ss");
 	    	return myformat.format(currentdate);
 	    }
 

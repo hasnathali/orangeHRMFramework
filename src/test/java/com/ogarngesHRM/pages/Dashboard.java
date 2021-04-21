@@ -28,14 +28,14 @@ public class Dashboard {
 	}
 	
 	
-	By welcodetext = By.xpath("//a[contains(text(),'Welcome')]");
+	By welcometext = By.xpath("//a[contains(text(),'Welcome')]");
 	By lgout= By.xpath("//a[text()='Logout']");
 	
 	public void logOut()
 	{
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		driver.findElement(welcodetext).click();
+		driver.findElement(welcometext).click();
 		//wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(lgout))).click();
 		driver.findElement(lgout).click();
 		Assert.assertTrue(driver.getCurrentUrl().contains("login"));

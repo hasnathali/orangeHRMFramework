@@ -2,36 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-06T23:46:29 EDT" name="Suite" finished-at="2021-04-06T23:46:38 EDT" duration-ms="8355">
+  <suite started-at="2021-04-17T16:22:10 EDT" name="Default suite" finished-at="2021-04-17T16:22:34 EDT" duration-ms="24468">
     <groups>
     </groups>
-    <test started-at="2021-04-06T23:46:29 EDT" name="loginTest" finished-at="2021-04-06T23:46:38 EDT" duration-ms="8355">
-      <class name="com.ogarngesHRM.testcases.LoginTest">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.ogarngesHRM.testcases.LoginTest@7c3fdb62]" started-at="2021-04-06T23:46:29 EDT" name="startBrowser" finished-at="2021-04-06T23:46:34 EDT" duration-ms="5069" status="PASS">
+    <test started-at="2021-04-17T16:22:10 EDT" name="Default test" finished-at="2021-04-17T16:22:34 EDT" duration-ms="24468">
+      <class name="com.ogarngesHRM.grid.DemoSeleniumGrid">
+        <test-method signature="testBrowserStack()[pri:0, instance:com.ogarngesHRM.grid.DemoSeleniumGrid@31b82e0f]" started-at="2021-04-17T16:22:10 EDT" name="testBrowserStack" finished-at="2021-04-17T16:22:34 EDT" duration-ms="24363" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method signature="login_001(java.lang.String, java.lang.String)[pri:0, instance:com.ogarngesHRM.testcases.LoginTest@7c3fdb62]" started-at="2021-04-06T23:46:35 EDT" name="login_001" data-provider="TestData" finished-at="2021-04-06T23:46:37 EDT" duration-ms="2150" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_001 -->
-        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.ogarngesHRM.testcases.LoginTest@7c3fdb62]" started-at="2021-04-06T23:46:37 EDT" name="closeBroswer" finished-at="2021-04-06T23:46:38 EDT" duration-ms="134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBroswer -->
-      </class> <!-- com.ogarngesHRM.testcases.LoginTest -->
-    </test> <!-- loginTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testBrowserStack -->
+      </class> <!-- com.ogarngesHRM.grid.DemoSeleniumGrid -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

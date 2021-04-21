@@ -3,12 +3,17 @@ com\ogarngesHRM\listener\ExtentTestNGITestListener.class
 com\ogarngesHRM\testcases\CreateUserTest2.class
 com\ogarngesHRM\testcases\LoginOutTest.class
 com\ogarngesHRM\dataprovider\ExcelReader.class
+com\ogarngesHRM\testcases\DemoDataBaseRead.class
+com\ogarngesHRM\dataprovider\DataBaseReader.class
+com\ogarngesHRM\grid\DemoSeleniumGrid.class
 com\ogarngesHRM\dataprovider\ConfigFileReader.class
+com\ogarngesHRM\dataprovider\ConfigDataBaseReader.class
 com\ogarngesHRM\testcases\LoginTest.class
 com\ogarngesHRM\testcases\LoginTest2.class
 com\ogarngesHRM\base\BaseClass.class
 com\ogarngesHRM\testcases\CreateUserTest.class
 com\ogarngesHRM\testcases\DemoTestData.class
+com\ogarngesHRM\testcases\LoginTest3.class
 com\ogarngesHRM\utility\BrowserFactory.class
 com\ogarngesHRM\dataprovider\TestDataProvider.class
 com\ogarngesHRM\pages\HomePage.class

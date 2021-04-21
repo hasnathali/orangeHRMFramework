@@ -1,4 +1,6 @@
 package com.ogarngesHRM.dataprovider;
+import java.sql.SQLException;
+
 import org.testng.annotations.DataProvider;
 
 
@@ -30,6 +32,25 @@ public class TestDataProvider {
 		return excelreader.getExcelData("userinfo");
 
 	}
+	
+	@DataProvider(name="MySqlTestData")
+	public Object[][] getMySqlData() throws ClassNotFoundException, SQLException
+	{
+		DataBaseReader sqlreader = new DataBaseReader();
+		return sqlreader.getMySqlData();
+	}
+	
+	/*
+	@DataProvider(name="MySqlTestData")
+	public String[][] getMySqlData() throws ClassNotFoundException, SQLException
+	{
+		DataBaseReader sqlreader = new DataBaseReader();
+		return sqlreader.getMySqlData();
+	}
+	 */
+	
+	
+	
 	
 	
 }//end class

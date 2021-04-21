@@ -75,9 +75,10 @@ public class AdminPage {
 		//Assert.assertTrue(Utility.waitForCurrentURL(driver, "viewSystemUsers"));
 	}
 	
-	public void urlVerify()
+	public boolean urlVerify()
 	{
 		Assert.assertTrue(Utility.waitForCurrentURL(driver, "viewSystemUsers"));
+		return true;
 	}
 	
 	

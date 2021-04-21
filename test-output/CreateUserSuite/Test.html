@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 24 20:29:30 EDT 2021</td>
+<td>Started on:</td><td>Wed Apr 14 14:40:12 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12480 ms)</td>
+<tr><td>Total time:</td><td>71 seconds (71996 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,22 +75,39 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ogarngesHRM.testcases.CreateUserTest.createUser_001()'><b>createUser_001</b><br>Test class: com.ogarngesHRM.testcases.CreateUserTest</td>
-<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void com.ogarngesHRM.testcases.CreateUserTest.createUser_001(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: createUser_001([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Admin,(java.lang.String) John Smith,(java.lang.String) Mamun_50,(java.lang.String) Mamun_50,(java.lang.String) Mamun_50]
+<td title='com.ogarngesHRM.testcases.CreateUserTest.createUser_001()'><b>createUser_001</b><br>Test class: com.ogarngesHRM.testcases.CreateUserTest<br>Parameters: Admin, admin123, Admin, Jacqueline White, Hasnath_61, Hasnath_61</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;saveSystemUser&quot;. Current url: &quot;https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.0.0-beta-1&apos;, revision: &apos;9c03156c2b&apos;
+System info: host: &apos;DESKTOP-SHA&apos;, ip: &apos;192.168.188.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Hasnath\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd897a5873a8dcb2de8212a2569cf7fb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.ogarngesHRM.utility.Utility.waitForCurrentURL(Utility.java:72)
+	at com.ogarngesHRM.pages.AdminPage.clickAddUser(AdminPage.java:31)
+	at com.ogarngesHRM.testcases.CreateUserTest.createUser_001(CreateUserTest.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1082640380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1082640380'><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void com.ogarngesHRM.testcases.CreateUserTest.createUser_001(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: createUser_001([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Admin,(java.lang.String) John Smith,(java.lang.String) Mamun_50,(java.lang.String) Mamun_50,(java.lang.String) Mamun_50]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:905)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace947437179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace947437179'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;saveSystemUser&quot;. Current url: &quot;https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.0.0-beta-1&apos;, revision: &apos;9c03156c2b&apos;
+System info: host: &apos;DESKTOP-SHA&apos;, ip: &apos;192.168.188.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Hasnath\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd897a5873a8dcb2de8212a2569cf7fb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.ogarngesHRM.utility.Utility.waitForCurrentURL(Utility.java:72)
+	at com.ogarngesHRM.pages.AdminPage.clickAddUser(AdminPage.java:31)
+	at com.ogarngesHRM.testcases.CreateUserTest.createUser_001(CreateUserTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -112,8 +129,93 @@ Arguments: [(java.lang.String) Admin,(java.lang.String) John Smith,(java.lang.St
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.ogarngesHRM.testcases.CreateUserTest@48b67364</td></tr>
+<td>22</td>
+<td>com.ogarngesHRM.testcases.CreateUserTest@189cbd7c</td></tr>
+<tr>
+<td title='com.ogarngesHRM.testcases.CreateUserTest.createUser_001()'><b>createUser_001</b><br>Test class: com.ogarngesHRM.testcases.CreateUserTest<br>Parameters: Admin, admin123, ESS, Jacqueline White, Mizan_61, Mizan_61</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-beta-1&apos;, revision: &apos;9c03156c2b&apos;
+System info: host: &apos;DESKTOP-SHA&apos;, ip: &apos;192.168.188.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd897a5873a8dcb2de8212a2569cf7fb, findElement {using=id, value=txtUsername}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Hasnath\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd897a5873a8dcb2de8212a2569cf7fb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:195)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:128)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1255)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at com.ogarngesHRM.utility.Utility.findElement(Utility.java:81)
+	at com.ogarngesHRM.utility.Utility.type(Utility.java:92)
+	at com.ogarngesHRM.pages.HomePage.enterUserName(HomePage.java:24)
+	at com.ogarngesHRM.testcases.CreateUserTest.createUser_001(CreateUserTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1406763631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1406763631'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-beta-1&apos;, revision: &apos;9c03156c2b&apos;
+System info: host: &apos;DESKTOP-SHA&apos;, ip: &apos;192.168.188.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd897a5873a8dcb2de8212a2569cf7fb, findElement {using=id, value=txtUsername}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Hasnath\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd897a5873a8dcb2de8212a2569cf7fb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:195)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:128)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1255)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at com.ogarngesHRM.utility.Utility.findElement(Utility.java:81)
+	at com.ogarngesHRM.utility.Utility.type(Utility.java:92)
+	at com.ogarngesHRM.pages.HomePage.enterUserName(HomePage.java:24)
+	at com.ogarngesHRM.testcases.CreateUserTest.createUser_001(CreateUserTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.ogarngesHRM.testcases.CreateUserTest@189cbd7c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -123,10 +225,15 @@ Arguments: [(java.lang.String) Admin,(java.lang.String) John Smith,(java.lang.St
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ogarngesHRM.testcases.LoginTest.login_001()'><b>login_001</b><br>Test class: com.ogarngesHRM.testcases.LoginTest<br>Parameters: Admin, admin123</td>
+<td title='com.ogarngesHRM.testcases.CreateUserTest.createUser_001()'><b>createUser_001</b><br>Test class: com.ogarngesHRM.testcases.CreateUserTest<br>Parameters: Admin, admin123, Admin, Jacqueline White, Mamun_62, Mamun_61</td>
 <td></td>
-<td>1</td>
-<td>com.ogarngesHRM.testcases.LoginTest@2663e964</td></tr>
+<td>12</td>
+<td>com.ogarngesHRM.testcases.CreateUserTest@189cbd7c</td></tr>
+<tr>
+<td title='com.ogarngesHRM.testcases.CreateUserTest.createUser_001()'><b>createUser_001</b><br>Test class: com.ogarngesHRM.testcases.CreateUserTest<br>Parameters: Admin, admin123, ESS, Jacqueline White, Wakil_61, Wakil_61</td>
+<td></td>
+<td>5</td>
+<td>com.ogarngesHRM.testcases.CreateUserTest@189cbd7c</td></tr>
 </table><p>
 </body>
 </html>

@@ -22,16 +22,15 @@ public class LoginTest extends BaseClass {
 		//home.enterUserName("Admin");
 		home.enterpassword(pass);
 		home.loginButton();
-		
 	}
 	
-/*
+
 	@Test
 	public void logout_002()
 	{
 		Dashboard dashboard = new Dashboard(driver);
 		dashboard.logOut();
 	}
-*/
+
 
 }

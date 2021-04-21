@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ogarngesHRM.testcases.CreateUserTest2">
+      <class name="com.ogarngesHRM.grid.DemoSeleniumGrid">
         <methods>
-          <include name="closeBroswer"/>
-          <include name="startBrowser"/>
-          <include name="createUser_001"/>
+          <include name="testBrowserStack"/>
         </methods>
-      </class> <!-- com.ogarngesHRM.testcases.CreateUserTest2 -->
+      </class> <!-- com.ogarngesHRM.grid.DemoSeleniumGrid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

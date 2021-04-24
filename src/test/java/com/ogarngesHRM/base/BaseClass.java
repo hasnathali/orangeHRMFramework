@@ -44,7 +44,8 @@ public class BaseClass {
 		{
 			String Os_Name = OsName.replace("_", " ");
 			String Os_Version = OsVersion.replace("_", " ");
-			
+			System.out.println("OS Name "+Os_Name);
+			System.out.println("OS Version "+Os_Version);
 			startBrowseronnGrid(Os_Name, Os_Version, Browser, BrowsrVersion, url);
 			
 		}

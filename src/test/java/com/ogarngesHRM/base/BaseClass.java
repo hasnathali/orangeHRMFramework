@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -23,7 +24,7 @@ public class BaseClass {
 	{
 		return driver;
 	}
-	//*
+	/*
 	@Parameters({"Browsr","StagingURL"})
 	@BeforeClass
 	public void startBrowser(String Browser, String url)
@@ -32,7 +33,25 @@ public class BaseClass {
 		BrowserFactory browserfactory = new BrowserFactory();
 		driver = browserfactory.stratBrowser(Browser,url); 
 		System.out.println("**********Browser is Running***********");
+	}*/
+	//String osName,String osVersion,String browsrName,String browserVersion, String applicationURL
+	@Parameters({"OsName","OsVersion","Browsr","BrowsrVersion","StagingURL"})
+	@BeforeClass
+	public void startBrowser(@Optional("Windows")String OsName,@Optional("10")String OsVersion,@Optional("chrome")String Browser,@Optional("88.0")String BrowsrVersion, String url)
+	{
+		System.out.println("*****Start Browser on BrowserStack with bellow details:*****");
+		
+		System.out.println("OS Name "+ OsName);
+		System.out.println("OS Version "+ OsVersion);
+		System.out.println("Browser Name "+ Browser);
+		System.out.println("Browser Version "+ BrowsrVersion);
+		System.out.println("Application url "+ url);
+		
+		BrowserFactory browserfactory = new BrowserFactory();
+		driver = browserfactory.stratBrowserOnGrid(OsName, OsVersion, Browser, BrowsrVersion, url);
+		System.out.println("**********Browser is to going Start and run the test ***********");
 	}
+
 
 	/*
 	@BeforeClass
@@ -56,6 +75,7 @@ public class BaseClass {
 	public void closeBroswer()
 	{
 		driver.close();
+		driver.quit();
 		System.out.println("**********Browser is Closing*************");
 	}
 	

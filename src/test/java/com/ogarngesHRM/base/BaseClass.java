@@ -42,10 +42,13 @@ public class BaseClass {
 	{
 		if(runoncloud==true)
 		{
-			startBrowseronnGrid(OsName, OsVersion, Browser, BrowsrVersion, url);
+			String Os_Name = OsName.replace("_", " ");
+			String Os_Version = OsVersion.replace("_", " ");
+			
+			startBrowseronnGrid(Os_Name, Os_Version, Browser, BrowsrVersion, url);
 			
 		}
-		else
+		else if(runoncloud==false)
 		{
 			startBrowseronLocal(Browser, url);
 		}

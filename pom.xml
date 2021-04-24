@@ -77,6 +77,8 @@
 						<suiteXmlFile>XMLFiles\${testSuite}</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>						
+						<osname>${OsName}</osname>
+						<osversion>${OsVersion}</osversion>
 						<cloudenvironment>${runoncloud}</cloudenvironment>
 						<browser>${Browsr}</browser>
 						<url>${StagingURL}</url>
